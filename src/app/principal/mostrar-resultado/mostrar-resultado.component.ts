@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mostrar-resultado',
   templateUrl: './mostrar-resultado.component.html',
-  styleUrls: ['./mostrar-resultado.component.css']
 })
-export class MostrarResultadoComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class MostrarResultadoComponent {
+  @Input() mostrarResuldado: number = 0;
 }

@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css'],
 })
 export class PrincipalComponent {
-  pintarResultado() {
-    console.log();
+  resultado: number = 0;
+  pintarResultado(resultado: number) {
+    this.resultado = resultado;
   }
 }
